@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Founder & Product Developer - Karan Shah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">Karan Shah</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="detail-page">
+        <div class="container">
+            <div class="detail-card">
+                <div class="detail-header">
+                    <span class="detail-badge">Leadership & Entrepreneurship</span>
+                    <h1 class="detail-title">Co-Founder & Product Developer</h1>
+                    <p class="detail-company">KV Digitalise</p>
+                    <p class="detail-duration">July 2020 - November 2022</p>
+                </div>
+                
+                <div class="detail-content">
+                    <h2>Unity in Achievements: Clients, Colleagues, and Mentors</h2>
+                    
+                    <p>During my tenure as Co-Founder and Product Developer at KV Digitalise, I experienced firsthand the power of collaborative achievement and the importance of building strong relationships across all levels of business interaction.</p>
+                    
+                    <h3>Founding Vision and Leadership</h3>
+                    <p>As a co-founder, I was instrumental in establishing the company's vision and strategic direction. My role encompassed not only product development but also team leadership, client relationship management, and business strategy formulation. This experience taught me the critical importance of aligning diverse stakeholders around a common goal.</p>
+                    
+                    <h3>Product Development Excellence</h3>
+                    <p>Leading the product development initiatives, I focused on creating solutions that truly addressed client needs while maintaining technical excellence. This involved:</p>
+                    <ul>
+                        <li>Conducting comprehensive market research and client needs analysis</li>
+                        <li>Designing and implementing scalable product architectures</li>
+                        <li>Managing the entire product lifecycle from conception to deployment</li>
+                        <li>Establishing quality assurance processes and maintaining high standards</li>
+                    </ul>
+                    
+                    <h3>Client Relationship Building</h3>
+                    <p>One of the most valuable aspects of this role was learning to build and maintain strong client relationships. I discovered that successful client partnerships are built on:</p>
+                    <ul>
+                        <li><strong>Active Listening:</strong> Understanding not just what clients say they need, but what they actually need</li>
+                        <li><strong>Transparent Communication:</strong> Maintaining open channels of communication about project progress, challenges, and opportunities</li>
+                        <li><strong>Collaborative Problem-Solving:</strong> Working together with clients to find innovative solutions</li>
+                        <li><strong>Consistent Delivery:</strong> Building trust through reliable execution and meeting commitments</li>
+                    </ul>
+                    
+                    <h3>Team Leadership and Colleague Collaboration</h3>
+                    <p>Managing a diverse team of developers, designers, and business professionals taught me invaluable lessons about leadership and collaboration:</p>
+                    <ul>
+                        <li>Creating an environment where every team member felt valued and heard</li>
+                        <li>Facilitating cross-functional collaboration between technical and business teams</li>
+                        <li>Mentoring junior team members and fostering their professional growth</li>
+                        <li>Implementing agile methodologies to improve team efficiency and communication</li>
+                    </ul>
+                    
+                    <h3>Mentorship and Learning</h3>
+                    <p>Throughout this journey, I was fortunate to work with experienced mentors who guided my development as both a technical professional and a business leader. Key lessons included:</p>
+                    <ul>
+                        <li>The importance of balancing technical perfectionism with business pragmatism</li>
+                        <li>How to make difficult decisions under uncertainty and time pressure</li>
+                        <li>The value of building long-term relationships over short-term gains</li>
+                        <li>Understanding that failure is an opportunity for learning and growth</li>
+                    </ul>
+                    
+                    <h3>Key Achievements and Impact</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h4>Duration</h4>
+                            <p class="metric-value">2.3 Years</p>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Team Size</h4>
+                            <p class="metric-value">8+ Members</p>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Projects</h4>
+                            <p class="metric-value">15+ Delivered</p>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Client Satisfaction</h4>
+                            <p class="metric-value">95%+</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Transition to Data Science</h3>
+                    <p>This entrepreneurial experience was pivotal in my decision to pursue advanced studies in data science. The challenges I faced in understanding market trends, optimizing business processes, and making data-driven decisions sparked my passion for leveraging data and AI to solve complex problems.</p>
+                    
+                    <p>The leadership skills, client relationship management experience, and business acumen I developed during this time continue to enhance my effectiveness as a data scientist, allowing me to bridge the gap between technical solutions and business value.</p>
+                    
+                    <h3>Lessons for Future Endeavors</h3>
+                    <p>This experience reinforced several key principles that guide my professional approach:</p>
+                    <ul>
+                        <li><strong>Collaborative Excellence:</strong> The best results come from bringing together diverse perspectives and expertise</li>
+                        <li><strong>Client-Centric Thinking:</strong> Understanding and prioritizing client needs leads to more successful outcomes</li>
+                        <li><strong>Continuous Learning:</strong> Staying curious and open to new ideas and feedback</li>
+                        <li><strong>Relationship Building:</strong> Investing in long-term relationships creates sustainable success</li>
+                        <li><strong>Adaptability:</strong> Being flexible and responsive to changing circumstances and requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Karan Shah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
