@@ -465,6 +465,45 @@ body {
     padding: 5rem 0;
 }
 
+.project-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #e5e7eb;
+    background: white;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    background: #eff6ff;
+}
+
+.projects-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .projects-grid-two {
+        grid-template-columns: 1fr;
+    }
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -505,23 +544,23 @@ body {
 }
 
 .project-badge.healthcare {
-    background: #fef2f2;
-    color: #991b1b;
+    background: #22c55e;
+    color: white;
 }
 
 .project-badge.finance {
-    background: #f0fdf4;
-    color: #166534;
+    background: #1e3a8a;
+    color: white;
 }
 
 .project-badge.entertainment {
-    background: #fef3c7;
-    color: #92400e;
+    background: #9333ea;
+    color: white;
 }
 
 .project-badge.sustainability {
-    background: #ecfdf5;
-    color: #065f46;
+    background: #22c55e;
+    color: white;
 }
 
 .project-title {
@@ -554,12 +593,191 @@ body {
     color: #f59e0b;
 }
 
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tag {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.project-course {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.project-achievement-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: #92400e;
+    font-weight: 500;
+}
+
+.project-achievement-highlight svg {
+    color: #f59e0b;
+}
+
+.project-achievement-highlight-healthcare {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: #92400e;
+    font-weight: 500;
+}
+
+.project-achievement-highlight svg {
+    color: #f59e0b;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.btn-github {
+    background: #374151;
+    color: white;
+    border: 2px solid #374151;
+}
+
+.btn-github:hover {
+    background: #1f2937;
+    border-color: #1f2937;
+}
+
 /* Education Section */
 .education-section {
     padding: 5rem 0;
     background: #f9fafb;
 }
 
+.education-grid-new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .education-grid-new {
+        grid-template-columns: 1fr;
+    }
+}
+
+.education-card-new {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-card-new:hover {
+    transform: translateY(-2px);
+}
+
+.education-card-new.blue-border {
+    border-left: 4px solid #3b82f6;
+}
+
+.education-card-new.orange-border {
+    border-left: 4px solid #f97316;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.education-logo-new {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.education-institution-info {
+    flex: 1;
+}
+
+.institution-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.blue-border .institution-name {
+    color: #3b82f6;
+}
+
+.orange-border .institution-name {
+    color: #f97316;
+}
+
+.school-name {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.blue-border .school-name {
+    color: #3b82f6;
+}
+
+.orange-border .school-name {
+    color: #f97316;
+}
+
+.education-details {
+    padding-left: 0;
+}
+
+.degree-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.5rem 0;
+}
+
+.education-location {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0.25rem 0;
+}
+
+.education-duration {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Legacy styles for compatibility */
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -615,12 +833,6 @@ body {
 
 .orange-highlight .education-institution {
     color: #f97316;
-}
-
-.education-duration {
-    color: #6b7280;
-    font-size: 0.875rem;
-    margin-bottom: 0.25rem;
 }
 
 .education-gpa {
