@@ -1,4 +1,3 @@
-
 // Mobile Navigation
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
@@ -37,18 +36,18 @@ window.addEventListener('scroll', () => {
 // Contact form handling
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(this);
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');
-    
+
     // Simple form validation
     if (!name || !email || !message) {
         alert('Please fill in all fields');
         return;
     }
-    
+
     // Here you would typically send the data to a server
     alert('Thank you for your message! I will get back to you soon.');
     this.reset();
@@ -57,11 +56,11 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 // Animate elements on scroll
 function animateOnScroll() {
     const elements = document.querySelectorAll('.skill-card, .experience-card, .project-card, .achievement-card');
-    
+
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
-        
+
         if (elementTop < window.innerHeight - elementVisible) {
             element.style.opacity = '1';
             element.style.transform = 'translateY(0)';
@@ -70,17 +69,69 @@ function animateOnScroll() {
 }
 
 // Initial setup for animations
-document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.skill-card, .experience-card, .project-card, .achievement-card');
-    
-    elements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
     });
-    
-    animateOnScroll();
+
+    // Project filtering functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            // Filter projects
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            contactForm.reset();
+        });
+    }
 });
+
+// Add fadeIn animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+`;
+document.head.appendChild(style);
 
 window.addEventListener('scroll', animateOnScroll);
 
